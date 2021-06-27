@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.grid {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 360px;
+  width: 362px;
+}
+
+.grid div {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-image: url("path.jpg");
+}
+
+.grid div.ending-block {
+  background-image: url("./house.jpg");
+  background-size: cover;
+}
+
+.grid div.starting-block {
+  background-image: url("./path.jpg");
+  background-size: cover;
+}
+
+.grid div.c1.car-left {
+  background-image: url("./carLeft.jpg");
+  background-size: cover;
+}
+
+.grid div.c1.car-right {
+  background-image: url("./carRight.jpg");
+  background-size: cover;
+}
+
+.grid div.c2,
+.grid div.c3 {
+  background-image: none;
+  background-color: black;
+}
+
+.grid div.l1,
+.grid div.l2,
+.grid div.l3 {
+  background-image: url("log.png");
+  background-size: cover;
+}
+
+.grid div.l4,
+.grid div.l5 {
+  background-image: url("water.jpg");
+  background-size: cover;
+}
+
+.grid div.frog {
+  background-image: url("frog.jpg");
+  background-size: cover;
+}
+
+#heading {
+  height: 18vh;
+  width: 100vw;
+  margin: 0;
+  padding-top: 3.5vh;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgb(240, 252, 72);
+  color: black;
+  font-family: "Dancing Script", cursive;
+}
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #28334aff;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.3rem;
+}
+
+.navbar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button {
+  width: 10rem;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: rgb(18, 23, 34);
+}
+
+.container {
+  width: 100vw;
+  height: 64.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #68310d;
+}
+
+#rules {
+  width: 100vw;
+  height: 5vh;
+  margin: 0;
+  font-size: 1.25rem;
+  background-color: rgb(240, 252, 72);
+  color: black;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  padding-bottom: 7.5vh;
+}
+
+#rules:hover {
+    cursor: pointer;
+}
+
+.modal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-rules-heading {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: rgb(240, 252, 72);
+  font-family: cursive;
+  font-size: 1.5rem;
+}
+
+.modal-rules-list {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  padding-left: 18vw;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.modal-rules-list li {
+  padding-top: 5vh;
+}
+
+#close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0rem;
+    color: white;
+    top: 0;
+    width: 4.5rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    background-color:rgb(199, 35, 35);
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+#close:hover {
+    cursor: pointer;
+}

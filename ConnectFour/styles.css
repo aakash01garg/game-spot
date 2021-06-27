@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 356px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.grid div {
+  height: 50px;
+  width: 50px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.player-one {
+  background-image: url("1.jpg");
+  background-size: cover;
+}
+
+.player-two {
+  background-image: url("2.jpg");
+  background-size: cover;
+}
+
+.grid .taken.player-one,
+.grid .taken.player-two {
+  border: none;
+}
+
+#heading {
+  height: 18vh;
+  width: 100vw;
+  margin: 0;
+  padding-top: 3.5vh;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgb(240, 252, 72);
+  color: black;
+  font-family: "Dancing Script", cursive;
+}
+
+#rules {
+  width: 100vw;
+  height: 5vh;
+  margin: 0;
+  font-size: 1.25rem;
+  background-color: rgb(240, 252, 72);
+  color: black;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  padding-bottom: 7.5vh;
+}
+
+#navbar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: #28334aff;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.3rem;
+}
+
+#div-score,
+#message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reset {
+  outline: none;
+  display: flex;
+  width: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#reset:hover {
+  cursor: pointer;
+  background-color: rgb(18, 23, 34);
+}
+
+.container {
+  width: 100vw;
+  height: 64.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #422057ff;
+}
+
+.taken.fixed {
+  border: none;
+  background-image: url("brick.jpg");
+  background-size: cover;
+}

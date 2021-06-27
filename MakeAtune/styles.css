@@ -1,0 +1,96 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+#record {
+  position: fixed;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  background-color: black;
+  border: 5px solid white;
+  z-index: 3;
+}
+
+#record {
+  top: calc((100vh - 4rem) / 2);
+}
+
+.record-button-div {
+  height: 80%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.record-button-div {
+  background-color: red;
+}
+
+.record-animation {
+  animation: anim 1s infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#navbar {
+  position: absolute;
+  z-index: 3;
+  width: 100vw;
+  height: 5vh;
+  background-color: white;
+}
+
+#heading,#rules {
+  position: absolute;
+}
+
+#heading {
+  height: 15vh;
+  width: 100vw;
+  margin: 0;
+  padding-top: 1vh;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgb(240, 252, 72);
+  color: black;
+  font-family: "Dancing Script", cursive;
+}
+
+#rules {
+  top: 15vh;
+  width: 100vw;
+  height: 5vh;
+  margin: 0;
+  font-size: 1.25rem;
+  background-color: rgb(240, 252, 72);
+  color: black;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  padding-bottom: 7.5vh;
+}
